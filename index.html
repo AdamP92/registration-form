@@ -12,14 +12,16 @@
 </head>
 <body>
   <section>
-      <div class="max-length island">
-        <h1 class="pad-t not-bold">Want to go to Mars?</h1>
-        <p class="mega bold">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-        <p class="italic mega bold">Personal details</p>
-        <form class="push-0 grid" method="POST" action="https://formspree.io/adam.poehlmann.92@gmail.com">
+    <div class="max-length island grid">
+      <input class="unit" type="hidden" name="blank" value="">
+      <h1 class="pad-t not-bold unit xs-1 s-1 m-1 l-1">Want to go to Mars?</h1>
+      <p class="mega bold unit xs-1 s-1 m-1 l-1">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <form class="push-0 unit xs-1 s-1 m-1 l-1" method="POST" action="https://formspree.io/adam.poehlmann.92@gmail.com">
+        <fieldset class="grid xs-1 s-1 m-1 l-1">
+          <legend class="italic mega pad-b-1-2 bold unit xs-1 s-1 m-1 l-1">Personal details</legend>
           <div class="push unit xs-1 s-1 m-1 l-1-2">
             <label for="name">Name</label>
-            <input id="name" name="name" required>
+            <input id="name" name="Request to join the mission" required>
           </div>
           <div class="push unit xs-1 s-1 m-1 l-1-2">
             <label for="age">Age</label>
@@ -44,14 +46,15 @@
           </div>
           <p class="italic mega unit xs-1 s-1 m-1 l-1">Mission statement</p>
           <div class="push unit xs-1 s-1 m-1 l-1">
-            <label for="details">Why do you want to go to Mars?</label>
-            <textarea id="why" name="message" required></textarea>
+            <label for="explain">Why do you want to go to Mars?</label>
+            <textarea id="explain" name="message" required></textarea>
           </div>
           <div class="button push-2 unit xs-1 s-1 m-1 l-1">
-            <button class="btn" type="submit">Register for the trip!</button>
+            <button class="btn island-1-2" type="submit">Register for the trip!</button>
           </div>
-        </form>
-      </div>
-    </section>
+        </fieldset>
+      </form>
+    </div>
+  </section>
 </body>
 </html>

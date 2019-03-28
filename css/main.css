@@ -10,9 +10,28 @@ h1 {
 .btn {
   background-color: #000;
   color: #f2f2f2;
-  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: grey;
 }
 
 .button {
   text-align: center;
+}
+
+legend {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    background-color: #fff;
+  }
+
+  section {
+    background-color: white;
+  }
+
 }
